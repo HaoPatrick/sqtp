@@ -18,7 +18,7 @@ class DrawerUndocked extends React.Component {
       !this.props.open
     );
   }
-
+  
   render() {
     return (
       <div>
@@ -29,7 +29,7 @@ class DrawerUndocked extends React.Component {
           onRequestChange={this.handleClose}
         >
           <MenuItem onTouchTap={this.handleClose}>Menu Item</MenuItem>
-          <MenuItem onTouchTap={this.handleClose}>Menu Item 2</MenuItem>
+          <MenuItem onTouchTap={this.handleClose}>Menu alkjsdfajl</MenuItem>
         </Drawer>
       </div>
     );
@@ -51,7 +51,7 @@ class AppBarSelf extends React.Component{
   render() {
     return (
       <AppBar
-        title="Title"
+        title="Teasf again"
         iconClassNameRight="muidocs-icon-navigation-expand-more"
         onLeftIconButtonTouchTap={this.handleClose}
         />      
