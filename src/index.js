@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 // import Main from './components/MainStructure.js';
 import './static/index.css';
-import { Router, Route, hashHistory } from 'react-router';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={App} />
-  </Router>,
+  <App />,
   document.getElementById('root')
 );
