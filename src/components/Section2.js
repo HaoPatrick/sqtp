@@ -4,7 +4,7 @@ class TestClass extends Component{
 	render(){
 		return(
 			<div>
-				<p>askjhdf</p>
+				<p>Section 2</p>
 			</div>
 		)
 	}
