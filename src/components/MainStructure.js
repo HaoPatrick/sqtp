@@ -78,7 +78,7 @@ class Main extends React.Component{
       <div>
         <AppBarSelf
           open={this.state.open}
-          onChangeState={this.handleToggle} />
+          onChangeState={this.handleToggle} /> 
         <DrawerUndocked open={this.state.open}
           onChangeState={this.handleToggle} />
       </div>  
