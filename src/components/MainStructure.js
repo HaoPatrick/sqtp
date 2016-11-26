@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, hashHistory,Link } from 'react-router';
+
 
 import MainPage from './MainPage.js';
 import Section2 from './Section2.js';

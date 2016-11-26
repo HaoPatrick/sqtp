@@ -1,12 +1,12 @@
 import React from 'react';
 import '../static/App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MainStructure from './MainStructure.js';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
+
 import AppBar from 'material-ui/AppBar';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+
 
 
 class AppBarSelf extends React.Component{
@@ -51,8 +51,9 @@ class DrawerUndocked extends React.Component {
           open={this.props.open}
           onRequestChange={this.handleClose}
         >
-          <MenuItem onTouchTap={this.handleClose}><Link to="/">Home</Link></MenuItem>
-          <MenuItem onTouchTap={this.handleClose}><Link to="/section2">Section2</Link></MenuItem>
+          <Link to="/2"><MenuItem onTouchTap={this.handleClose} primaryText="aaa0" /></Link>
+          <Link to="/3"><MenuItem onTouchTap={this.handleClose} primaryText="bbb0" /></Link>
+          <Link to="/4"><MenuItem onTouchTap={this.handleClose} primaryText="ccc0" /></Link>
         </Drawer>
       </div>
     );
@@ -80,9 +81,9 @@ class Main extends React.Component{
         <AppBarSelf
           open={this.state.open} title={this.state.title}
           onChangeState={this.handleToggle} />
-          <MainStructure/>
         <DrawerUndocked open={this.state.open}
           onChangeState={this.handleToggle} />
+
       </div>  
     )
   }
@@ -91,9 +92,12 @@ class Main extends React.Component{
 class NewAPP extends React.Component {
   render() {
     return (
-      <MuiThemeProvider>
-        <Main />
-      </MuiThemeProvider>
+      <MuiThemeProvider>     
+        <div>
+          <Main />
+          {this.props.children}  
+        </div>    
+      </MuiThemeProvider>  
     )
   }
 }
