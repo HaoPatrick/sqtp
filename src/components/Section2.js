@@ -23,6 +23,7 @@ class MainPageCards extends Component{
       <div>
         <Banners/>
         <SwipApp/>
+        
       </div>
     )
   }

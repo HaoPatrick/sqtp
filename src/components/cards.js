@@ -66,7 +66,7 @@ class CardExampleExpandable extends Component{
   }
   render() {
     let cardStyle = {
-      margin:'10px'
+      marginBottom:'10px'
     }
     return (
     <Card style={cardStyle}>

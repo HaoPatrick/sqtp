@@ -65,7 +65,7 @@ class Main extends React.Component{
     super();
     this.state = {
       open: false,
-      title:'Title'
+      title:'浙家塾'
     };
     this.handleToggle =
       this.handleToggle.bind(this);
