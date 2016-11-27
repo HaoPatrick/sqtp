@@ -51,9 +51,9 @@ class DrawerUndocked extends React.Component {
           open={this.props.open}
           onRequestChange={this.handleClose}
         >
-          <Link to="/2"><MenuItem onTouchTap={this.handleClose} primaryText="aaa0" /></Link>
-          <Link to="/3"><MenuItem onTouchTap={this.handleClose} primaryText="bbb0" /></Link>
-          <Link to="/4"><MenuItem onTouchTap={this.handleClose} primaryText="ccc0" /></Link>
+          <Link to="/"><MenuItem onTouchTap={this.handleClose} primaryText="aaa0" /></Link>
+          <Link to="/2"><MenuItem onTouchTap={this.handleClose} primaryText="bbb0" /></Link>
+          <Link to="/3"><MenuItem onTouchTap={this.handleClose} primaryText="ccc0" /></Link>
         </Drawer>
       </div>
     );

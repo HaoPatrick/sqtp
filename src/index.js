@@ -16,7 +16,7 @@ ReactDOM.render((
     <Route path="/" component={App}>
       <Route path="/2" component={Section2} />
       <Route path="/3" component={Section3} />
-      <Route path="/4" component={Section4} />      
+      <Route path="/4" component={Section3} />      
     </Route>
     <Route path="/a" component={Section2} />
     <Route path="/b" component={NewJS} />
